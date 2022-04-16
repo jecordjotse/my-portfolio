@@ -64,7 +64,7 @@ export const DashOne = styled.div`
     background-color: black;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    transition: transform 0.3s, bottom 0.3s;
+    transition: transform 0.2s, bottom 0.2s;
   }
 
   ${(props) => {
@@ -93,23 +93,25 @@ export const DashTwo = styled.div`
   height: 4px;
   width: 60%;
   background-color: black;
-  margin: 10px 0;
+  margin: 5px 0;
   border-radius: 25px;
   position: relative;
-  transition: width 0.3s 0.6s, transform 0.3s 0.3s, border-radius 0.3s 0.4s;
+  transition: width 0.3s 0.4s, transform 0.3s 0.2s, border-radius 0.3s 0.2s,
+    margin 0.2s;
 
   ${(props) => {
     if (props.clicked)
       return css`
         width: 4px;
         border-radius: 0px;
+        margin: 10px 0;
         animation-name: ${css`
           ${dashSpin}
         `};
         animation-duration: 0.6s;
         animation-iteration-count: initial;
         transform: translateX(13px) rotate(45deg);
-        transition: width 0.3s, border-radius 0.1s, left 0.3s;
+        transition: width 0.3s, border-radius 0.1s, left 0.3s, margin 0.3s;
       `;
   }}
 `;

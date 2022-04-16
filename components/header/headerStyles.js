@@ -25,16 +25,18 @@ export const Brand = styled.div`
 `;
 
 export const DropDownWrap = styled.div`
-  display: fixed;
-  height: 100vh;
+  display: block;
+  height: ${(props) => (props.showMenu ? "100vh" : "0px")};
   left: 0px;
   line-height: 20px;
   overflow-x: hidden;
   overflow-y: hidden;
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   right: 0px;
   top: 60px;
   width: 100vw;
+  transition: height 0.5s;
 `;
 
 export const NavBar = styled.nav`
@@ -50,7 +52,7 @@ export const NavBar = styled.nav`
   box-sizing: border-box;
   color: rgb(51, 51, 51);
   z-index: 1000;
-  display: block;
+  display: relative;
   float: none;
   font-family: Roboto, sans-serif;
   font-size: 14px;

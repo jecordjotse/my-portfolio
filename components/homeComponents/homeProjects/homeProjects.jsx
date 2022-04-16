@@ -1,5 +1,5 @@
 import React from 'react'
-import { PrjectsWrap, ProjectLineItem, TitleWrap } from './homeProjectsStyles'
+import { PrjectsWrap, ProjectItem, ProjectLineItem, TitleWrap } from './homeProjectsStyles'
 
 const HomeProjects = () => {
   return (
@@ -8,24 +8,24 @@ const HomeProjects = () => {
               <h2>My Projects</h2>
           </TitleWrap>
           <>
-            <ProjectLineItem>
-                <div>Project 1</div>
-                <div>Project 2</div>
-                <div>Project 3</div>
+            <ProjectLineItem itemCnt={3}>
+                <ProjectItem itemCnt={3}><h3>Project 1</h3></ProjectItem>
+                <ProjectItem itemCnt={3}><h3>Project 2</h3></ProjectItem>
+                <ProjectItem itemCnt={3}><h3>Project 3</h3></ProjectItem>
             </ProjectLineItem>
-            <ProjectLineItem>
-                <div>Project 4</div>
-                <div>Project 5</div>
+            <ProjectLineItem itemCnt={2}>
+                <ProjectItem itemCnt={2}><h3>Project 4</h3></ProjectItem>
+                <ProjectItem itemCnt={2}><h3>Project 5</h3></ProjectItem>
             </ProjectLineItem>
-            <ProjectLineItem>
-                <div>Project 6</div>
-                <div>Project 7</div>
-                <div>Project 8</div>
-                <div>Project 9</div>
+            <ProjectLineItem itemCnt={4}>
+                <ProjectItem itemCnt={4}><h3>Project 6</h3></ProjectItem>
+                <ProjectItem itemCnt={4}><h3>Project 7</h3></ProjectItem>
+                <ProjectItem itemCnt={4}><h3>Project 8</h3></ProjectItem>
+                <ProjectItem itemCnt={4}><h3>Project 9</h3></ProjectItem>
             </ProjectLineItem>
-            <ProjectLineItem>
-                <div>Project 10</div>
-                <div>Project 11</div>
+            <ProjectLineItem itemCnt={2}>
+                <ProjectItem itemCnt={2}><h3>Project 10</h3></ProjectItem>
+                <ProjectItem itemCnt={2}><h3>Project 11</h3></ProjectItem>
             </ProjectLineItem>
           </>
       </PrjectsWrap>
