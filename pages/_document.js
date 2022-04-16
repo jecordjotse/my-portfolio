@@ -79,7 +79,6 @@ export default class MyDocument extends Document {
             {'body{ font-family: "Dosis";font-size:18px;background:#efeaf6}'}
           </style>
 
-          <link href="/fontawesome/css/brands.css" rel="stylesheet" />
           <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         </Head>
         <body>
