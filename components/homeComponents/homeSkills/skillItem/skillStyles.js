@@ -8,7 +8,7 @@ export const SkillItemMainWrap = styled.div`
   font-size: 14px;
   line-height: 20px;
   margin-top: 18px;
-  width: 500px;
+  width: 100%;
   height: 40px;
   display: grid;
 `;
