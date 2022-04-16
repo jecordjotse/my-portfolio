@@ -13,30 +13,31 @@ const Header = () => {
           <MenuIcon menuFunc={()=>{console.log("I Clicked")}} />
         </HeaderWrap>
       </HeaderMainWrap>
-      <p>Hello World</p>
       <DropDownWrap>
         <NavBar>
-          <Link href="/">
+          <Link href="/" passHref>
             <NavItem>Home</NavItem>
           </Link>
-          <Link href="/about/elorm_jerome">
+          <Link href="/about/elorm_jerome" passHref>
             <NavItem>About Me</NavItem>
           </Link>
-          <Link href="contact">
+          <Link href="contact" passHref>
             <NavItem>Contact</NavItem>
           </Link>
           <SocialBar>
             <Link href="#">
               <a>
+                <i className="fa-brands fa-github-square"></i>
               </a>
             </Link>
             <Link href="#">
               <a>
+                <i className="fa-brands fa-github-square"></i>
               </a>
             </Link>
             <Link href="#">
               <a>
-  <i class="fa-brands fa-github-square"></i>
+                <i className="fa-brands fa-github-square"></i>
               </a>
             </Link>
           </SocialBar>
