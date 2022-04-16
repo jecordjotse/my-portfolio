@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { DashOne, DashThree, DashTwo, MenuIconWrap } from './menuIconStyles'
 
-const MenuIcon = () => {
+const MenuIcon = ({menuFunc}) => {
     const [clicked, setClicked] = useState(false)
     const handleClick = (e) => {
         e.preventDefault();
         setClicked(!clicked);
+        menuFunc(clicked)
     }
   return (
       <MenuIconWrap href="#" onClick={handleClick} clicked={clicked}>
