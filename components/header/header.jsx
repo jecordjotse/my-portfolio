@@ -51,7 +51,7 @@ const Header = () => {
                 <LinkedinIcon />
               </a>
             </Link>
-            <Link href="#">
+            <Link href="https://twitter.com/Elorm_Jerome">
               <a>
                 <TwitterIcon />
               </a>
