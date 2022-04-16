@@ -9,8 +9,8 @@ export const PrjectsWrap = styled.div`
 `;
 
 export const TitleWrap = styled.div`
-  margin-left: 448px;
-  margin-right: 448px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 940px;
   h2 {
     font-size: 32px;
@@ -18,10 +18,25 @@ export const TitleWrap = styled.div`
     line-height: 36px;
     margin: 0 0 32px 0;
   }
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media only screen and (min-width: 990px) {
+    max-width: 940px;
+  }
+
+  @media only screen and (min-width: 766px) and (max-width: 990px) {
+    max-width: 730px;
+  }
 `;
 
 export const ProjectLineItem = styled.div`
-  display: flex;
+  @media only screen and (min-width: 766px) {
+    display: flex;
+  }
+  @media only screen and (max-width: 766px) {
+    display: grid;
+  }
 
   div {
     flex: ${Math.round(Math.random())} 1 auto;
@@ -47,7 +62,13 @@ export const ProjectItem = styled.div`
   transition-duration: 0.25s;
   transition-property: opacity;
   transition-timing-function: ease;
-  width: calc(100vw / ${(props) => props.itemCnt});
+
+  @media only screen and (min-width: 766px) {
+    width: calc(100vw / ${(props) => props.itemCnt});
+  }
+  @media only screen and (max-width: 766px) {
+    width: 100vw;
+  }
   height: 350px;
 
   :hover {

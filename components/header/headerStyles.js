@@ -12,8 +12,28 @@ export const HeaderMainWrap = styled.div`
 export const HeaderWrap = styled.div`
   margin-left: auto;
   margin-right: auto;
-  max-width: 940px;
   display: flex;
+  @media only screen and (min-width: 990px) {
+    max-width: 940px;
+  }
+
+  @media only screen and (min-width: 766px) {
+    height: 67px;
+    font-size: 22px;
+  }
+
+  @media only screen and (max-width: 766px) {
+    height: 51px;
+    font-size: 16px;
+  }
+
+  @media only screen and (min-width: 766px) and (max-width: 990px) {
+    max-width: 730px;
+  }
+
+  @media only screen and (max-width: 990px) {
+    padding: 0 10px;
+  }
 `;
 
 export const Brand = styled.div`
@@ -34,9 +54,16 @@ export const DropDownWrap = styled.div`
   position: fixed;
   z-index: 999;
   right: 0px;
-  top: 60px;
   width: 100vw;
   transition: height 0.5s;
+
+  @media only screen and (min-width: 766px) {
+    top: 60px;
+  }
+
+  @media only screen and (max-width: 766px) {
+    top: 50px;
+  }
 `;
 
 export const NavBar = styled.nav`
@@ -53,11 +80,7 @@ export const NavBar = styled.nav`
   color: rgb(51, 51, 51);
   z-index: 1000;
   display: relative;
-  float: none;
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
   left: 0px;
-  line-height: 20px;
   min-width: 200px;
   overflow-x: visible;
   overflow-y: visible;
@@ -76,13 +99,10 @@ export const NavItem = styled.a`
   box-sizing: border-box;
   color: rgb(255, 23, 127);
   display: block;
-  font-family: Roboto, sans-serif;
-  font-size: 26px;
   font-weight: 300;
   line-height: 33px;
-  margin-left: 448px;
-  margin-right: 448px;
-  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 20px;
   padding-left: 0px;
   padding-right: 20px;
@@ -98,6 +118,25 @@ export const NavItem = styled.a`
   transition-property: color;
   transition-timing-function: ease;
   vertical-align: top;
+  @media only screen and (min-width: 990px) {
+    max-width: 940px;
+  }
+
+  @media only screen and (min-width: 766px) and (max-width: 990px) {
+    max-width: 730px;
+  }
+
+  @media only screen and (min-width: 766px) {
+    font-size: 22px;
+  }
+
+  @media only screen and (max-width: 766px) {
+    font-size: 16px;
+  }
+
+  @media only screen and (max-width: 990px) {
+    padding: 0 10px;
+  }
 `;
 
 export const SocialBar = styled.div`
@@ -105,8 +144,8 @@ export const SocialBar = styled.div`
   color: rgb(51, 51, 51);
   display: flex;
   line-height: 20px;
-  margin-left: 448px;
-  margin-right: 448px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 20px;
   padding-left: 0px;
   padding-right: 20px;
@@ -121,5 +160,17 @@ export const SocialBar = styled.div`
     margin-right: 16px;
     max-width: 100%;
     text-align: left;
+  }
+  @media only screen and (min-width: 990px) {
+    max-width: 940px;
+  }
+
+  @media only screen and (min-width: 766px) and (max-width: 990px) {
+    max-width: 730px;
+  }
+
+  @media only screen and (max-width: 990px) {
+    padding: 0 10px;
+    display: flex;
   }
 `;

@@ -8,10 +8,23 @@ export const SkillsMainWrap = styled.div`
 `;
 
 export const SkillsWrap = styled.div`
-  margin-left: 448px;
-  margin-right: 448px;
-  max-width: 940px;
-  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (min-width: 990px) {
+    max-width: 940px;
+  }
+
+  @media only screen and (min-width: 766px) and (max-width: 990px) {
+    max-width: 730px;
+  }
+
+  @media only screen and (min-width: 766px) {
+    display: flex;
+  }
+  @media only screen and (max-width: 766px) {
+    display: grid;
+  }
 `;
 
 export const TitleWrap = styled.div`
@@ -19,7 +32,7 @@ export const TitleWrap = styled.div`
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
-  width: 320px;
+  width: 50%;
 
   h2 {
     font-size: 21px;
@@ -37,7 +50,6 @@ export const Skills = styled.div`
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
-  width: 640px;
 
   p {
     box-sizing: border-box;
@@ -47,5 +59,9 @@ export const Skills = styled.div`
     line-height: 20px;
     margin-bottom: 10px;
     margin-top: 0px;
+  }
+
+  @media only screen and (max-width: 540px) {
+    max-width: 90vw;
   }
 `;
