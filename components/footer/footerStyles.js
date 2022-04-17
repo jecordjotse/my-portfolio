@@ -9,6 +9,8 @@ export const FooterWrap = styled.div`
   padding-right: 20px;
   padding-top: 35px;
   display: flex;
+  justify-content: center;
+  height: auto;
 
   div {
     position: absolute;

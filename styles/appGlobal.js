@@ -79,7 +79,7 @@ export const Flex = styled.div`
     css`
       justify-content: center;
     `};
-  @media only screen and (max-width: 600px) {
+  @media all and (max-width: 600px) {
     ${(props) =>
       props.verticalRPhone &&
       css`
@@ -93,7 +93,7 @@ export const Section = styled.section`
   display: flex;
   align-items: ${(props) => (props.left ? "flex-start" : "center")};
   flex-direction: column;
-  @media only screen and (min-width: 600px) {
+  @media all and (min-width: 600px) {
     padding: 100px 0 0;
   }
 `;
@@ -108,7 +108,7 @@ export const Grid = styled.div`
       : `repeat(${props.phoneNum}, 1fr)`};
   align-items: ${(props) => (props.top ? "flex-start" : "center")};
   justify-items: ${(props) => (props.phoneLeft ? "flex-start" : "center")};
-  @media only screen and (min-width: 600px) {
+  @media all and (min-width: 600px) {
     grid-gap: ${(props) => props.gap || "150px"};
     grid-template-columns: ${(props) =>
       typeof props.num === "object"
@@ -125,7 +125,7 @@ export const Grid = styled.div`
   ${({ oneColumnIPad }) =>
     oneColumnIPad &&
     css`
-      @media only screen and (max-width: 992px) {
+      @media all and (max-width: 992px) {
         grid-template-columns: 1fr;
       }
     `}

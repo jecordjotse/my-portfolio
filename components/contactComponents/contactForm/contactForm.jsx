@@ -7,7 +7,7 @@ const ContactForm = () => {
           <ContactFormWrap>
               <ContactText>
                   <h2>Get In Touch</h2>
-                  <p>Let's work together. Submit your details in this form and I will get back to you ASAP.</p>
+                  <p>Let&apos;s work together. Submit your details in this form and I will get back to you ASAP.</p>
             </ContactText>
             <FormWrap>
                 <form >

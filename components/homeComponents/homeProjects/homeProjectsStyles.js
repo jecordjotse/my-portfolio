@@ -21,20 +21,20 @@ export const TitleWrap = styled.div`
   padding-left: 10px;
   padding-right: 10px;
 
-  @media only screen and (min-width: 990px) {
+  @media all and (min-width: 990px) {
     max-width: 940px;
   }
 
-  @media only screen and (min-width: 766px) and (max-width: 990px) {
+  @media all and (min-width: 766px) and (max-width: 990px) {
     max-width: 730px;
   }
 `;
 
 export const ProjectLineItem = styled.div`
-  @media only screen and (min-width: 766px) {
+  @media all and (min-width: 766px) {
     display: flex;
   }
-  @media only screen and (max-width: 766px) {
+  @media all and (max-width: 766px) {
     display: grid;
   }
 
@@ -43,7 +43,7 @@ export const ProjectLineItem = styled.div`
   }
 `;
 
-export const ProjectItem = styled.div`
+export const ProjectCard = styled.div`
   background-color: rgba(0, 0, 0, 0);
   background-image: url("${(props) =>
     !!props.image ? props.image : "/glasses.jpg"}");
@@ -63,10 +63,10 @@ export const ProjectItem = styled.div`
   transition-property: opacity;
   transition-timing-function: ease;
 
-  @media only screen and (min-width: 766px) {
-    width: calc(100vw / ${(props) => props.itemCnt});
+  @media all and (min-width: 766px) {
+    width: calc(100vw / ${(props) => (!!props.itemCnt ? props.itemCnt : 1)});
   }
-  @media only screen and (max-width: 766px) {
+  @media all and (max-width: 766px) {
     width: 100vw;
   }
   height: 350px;

@@ -11,18 +11,18 @@ export const SkillsWrap = styled.div`
   margin-left: auto;
   margin-right: auto;
 
-  @media only screen and (min-width: 990px) {
+  @media all and (min-width: 990px) {
     max-width: 940px;
   }
 
-  @media only screen and (min-width: 766px) and (max-width: 990px) {
+  @media all and (min-width: 766px) and (max-width: 990px) {
     max-width: 730px;
   }
 
-  @media only screen and (min-width: 766px) {
+  @media all and (min-width: 766px) {
     display: flex;
   }
-  @media only screen and (max-width: 766px) {
+  @media all and (max-width: 766px) {
     display: grid;
   }
 `;
@@ -61,7 +61,7 @@ export const Skills = styled.div`
     margin-top: 0px;
   }
 
-  @media only screen and (max-width: 540px) {
+  @media all and (max-width: 540px) {
     max-width: 90vw;
   }
 `;

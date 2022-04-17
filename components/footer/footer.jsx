@@ -1,8 +1,9 @@
 import React from "react";
 import { FooterWrap } from "./footerStyles";
 
-const Footer = () => {
-  return <FooterWrap><p>Jerome Cordjotse <small> Inspired by<span>Webfront</span></small></p><div>social</div></FooterWrap>;
+const Footer = ({year}) => {
+  
+  return <FooterWrap><p>&copy; {year} Jerome Cordjotse</p><div>social</div></FooterWrap>;
 };
 
 export default Footer;

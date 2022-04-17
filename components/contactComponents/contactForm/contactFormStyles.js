@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const ContactFormMainWrap = styled.div`
   background-color: rgb(237, 237, 237);
   color: rgb(105, 105, 105);
-  padding-bottom: 80px;
-  padding-top: 80px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  min-height: 55vh;
 `;
 
 export const ContactFormWrap = styled.div`
@@ -13,19 +14,19 @@ export const ContactFormWrap = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: 940px;
-  @media only screen and (min-width: 990px) {
+  @media all and (min-width: 990px) {
     max-width: 940px;
   }
 
-  @media only screen and (min-width: 766px) and (max-width: 990px) {
+  @media all and (min-width: 766px) and (max-width: 990px) {
     max-width: 730px;
   }
 
-  @media only screen and (min-width: 766px) {
+  @media all and (min-width: 766px) {
     display: flex;
   }
 
-  @media only screen and (max-width: 766px) {
+  @media all and (max-width: 766px) {
     display: grid;
   }
 `;

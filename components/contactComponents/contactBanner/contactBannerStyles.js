@@ -26,31 +26,31 @@ export const ContactBannerWrap = styled.div`
     margin-right: auto;
     margin-top: 10px;
 
-    @media only screen and (min-width: 990px) {
+    @media all and (min-width: 990px) {
       max-width: 940px;
     }
 
-    @media only screen and (min-width: 766px) and (max-width: 990px) {
+    @media all and (min-width: 766px) and (max-width: 990px) {
       max-width: 730px;
     }
 
-    @media only screen and (min-width: 766px) {
+    @media all and (min-width: 766px) {
       margin-top: 60px;
     }
 
-    @media only screen and (max-width: 766px) {
+    @media all and (max-width: 766px) {
       margin-top: 50px;
     }
   }
 
-  @media only screen and (min-width: 766px) {
+  @media all and (min-width: 766px) {
     padding-bottom: 80px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 80px;
   }
 
-  @media only screen and (max-width: 766px) {
+  @media all and (max-width: 766px) {
     padding-bottom: 40px;
     padding-left: 10px;
     padding-right: 10px;
