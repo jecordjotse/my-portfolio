@@ -25,7 +25,7 @@ const Header = () => {
         </HeaderWrap>
       </HeaderMainWrap>
       <DropDownWrap showMenu={showMenu}>
-        <NavBar>
+        <NavBar onClick={toggleMenu}>
           <Link href="/" passHref>
             <NavItem>Home</NavItem>
           </Link>
