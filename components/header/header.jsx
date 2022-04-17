@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Link from "next/link";
 import { HeaderMainWrap, HeaderWrap, Brand, DropDownWrap, NavBar, NavItem, SocialBar } from "./headerStyles"
 import MenuIcon from "./menuIcon";
@@ -11,6 +11,7 @@ import { InstagramIcon } from '../svg/instagram';
 
 
 const Header = () => {
+  const myRef = useRef()
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = (clicked) => {
     if(clicked&&showMenu || (!clicked)&&(!showMenu))
@@ -21,11 +22,11 @@ const Header = () => {
       <HeaderMainWrap>
         <HeaderWrap>
           <Brand><p>Jerome Cordjotse</p></Brand>
-          <MenuIcon menuFunc={toggleMenu} />
+          <MenuIcon ref={myRef} menuFunc={toggleMenu} />
         </HeaderWrap>
       </HeaderMainWrap>
       <DropDownWrap showMenu={showMenu}>
-        <NavBar>
+        <NavBar onClick={() => {toggleMenu(true); myRef.current.childMethod()}}>
           <Link href="/" passHref>
             <NavItem>Home</NavItem>
           </Link>

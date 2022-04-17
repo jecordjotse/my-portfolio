@@ -13,25 +13,25 @@ export const HeaderWrap = styled.div`
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  @media only screen and (min-width: 990px) {
+  @media all and (min-width: 990px) {
     max-width: 940px;
   }
 
-  @media only screen and (min-width: 766px) {
+  @media all and (min-width: 766px) {
     height: 67px;
     font-size: 22px;
   }
 
-  @media only screen and (max-width: 766px) {
+  @media all and (max-width: 766px) {
     height: 51px;
     font-size: 16px;
   }
 
-  @media only screen and (min-width: 766px) and (max-width: 990px) {
+  @media all and (min-width: 766px) and (max-width: 990px) {
     max-width: 730px;
   }
 
-  @media only screen and (max-width: 990px) {
+  @media all and (max-width: 990px) {
     padding: 0 10px;
   }
 `;
@@ -57,11 +57,11 @@ export const DropDownWrap = styled.div`
   width: 100vw;
   transition: height 0.5s;
 
-  @media only screen and (min-width: 766px) {
+  @media all and (min-width: 766px) {
     top: 60px;
   }
 
-  @media only screen and (max-width: 766px) {
+  @media all and (max-width: 766px) {
     top: 50px;
   }
 `;
@@ -118,23 +118,23 @@ export const NavItem = styled.a`
   transition-property: color;
   transition-timing-function: ease;
   vertical-align: top;
-  @media only screen and (min-width: 990px) {
+  @media all and (min-width: 990px) {
     max-width: 940px;
   }
 
-  @media only screen and (min-width: 766px) and (max-width: 990px) {
+  @media all and (min-width: 766px) and (max-width: 990px) {
     max-width: 730px;
   }
 
-  @media only screen and (min-width: 766px) {
+  @media all and (min-width: 766px) {
     font-size: 22px;
   }
 
-  @media only screen and (max-width: 766px) {
+  @media all and (max-width: 766px) {
     font-size: 16px;
   }
 
-  @media only screen and (max-width: 990px) {
+  @media all and (max-width: 990px) {
     padding: 0 10px;
   }
 `;
@@ -161,15 +161,15 @@ export const SocialBar = styled.div`
     max-width: 100%;
     text-align: left;
   }
-  @media only screen and (min-width: 990px) {
+  @media all and (min-width: 990px) {
     max-width: 940px;
   }
 
-  @media only screen and (min-width: 766px) and (max-width: 990px) {
+  @media all and (min-width: 766px) and (max-width: 990px) {
     max-width: 730px;
   }
 
-  @media only screen and (max-width: 990px) {
+  @media all and (max-width: 990px) {
     padding: 0 10px;
     display: flex;
   }

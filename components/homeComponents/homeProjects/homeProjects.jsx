@@ -1,5 +1,6 @@
 import React from 'react'
-import { PrjectsWrap, ProjectItem, ProjectLineItem, TitleWrap } from './homeProjectsStyles'
+import { PrjectsWrap, ProjectLineItem, TitleWrap } from './homeProjectsStyles'
+import ProjectItem from './projectItem';
 
 const HomeProjects = () => {
   return (
@@ -9,27 +10,27 @@ const HomeProjects = () => {
           </TitleWrap>
           <>
             <ProjectLineItem itemCnt={3}>
-                <ProjectItem itemCnt={3}><h3>Project 1</h3></ProjectItem>
-                <ProjectItem itemCnt={3}><h3>Project 2</h3></ProjectItem>
-                <ProjectItem itemCnt={3}><h3>Project 3</h3></ProjectItem>
+                <ProjectItem count={3} name={"Project 1"} />
+                <ProjectItem count={3} name={"Project 1"} />
+                <ProjectItem count={3} name={"Project 1"} />
             </ProjectLineItem>
             <ProjectLineItem itemCnt={2}>
-                <ProjectItem itemCnt={2}><h3>Project 4</h3></ProjectItem>
-                <ProjectItem itemCnt={2}><h3>Project 5</h3></ProjectItem>
+                <ProjectItem count={2} name={"Project 1"} />
+                <ProjectItem count={2} name={"Project 1"} />
             </ProjectLineItem>
             <ProjectLineItem itemCnt={4}>
-                <ProjectItem itemCnt={4}><h3>Project 6</h3></ProjectItem>
-                <ProjectItem itemCnt={4}><h3>Project 7</h3></ProjectItem>
-                <ProjectItem itemCnt={4}><h3>Project 8</h3></ProjectItem>
-                <ProjectItem itemCnt={4}><h3>Project 9</h3></ProjectItem>
+                <ProjectItem count={4} name={"Project 1"} />
+                <ProjectItem count={4} name={"Project 1"} />
+                <ProjectItem count={4} name={"Project 1"} />
+                <ProjectItem count={4} name={"Project 1"} />
             </ProjectLineItem>
             <ProjectLineItem itemCnt={2}>
-                <ProjectItem itemCnt={2}><h3>Project 10</h3></ProjectItem>
-                <ProjectItem itemCnt={2}><h3>Project 11</h3></ProjectItem>
+                <ProjectItem count={2} name={"Project 1"} />
+                <ProjectItem count={2} name={"Project 1"} />
             </ProjectLineItem>
           </>
       </PrjectsWrap>
-  )
+  );
 }
 
 export default HomeProjects
