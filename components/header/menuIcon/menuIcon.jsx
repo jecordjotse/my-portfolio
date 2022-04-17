@@ -29,4 +29,6 @@ const MenuIcon = React.forwardRef(({menuFunc},ref) => {
   )
 });
 
+MenuIcon.displayName = 'MenuIcon';
+
 export default MenuIcon
