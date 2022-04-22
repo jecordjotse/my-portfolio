@@ -73,6 +73,13 @@ export const ProjectCard = styled.div`
 
   :hover {
     opacity: 60%;
+
+    h3 {
+      height: 100%;
+      transition: height 0.3s 0.8s;
+    }
+
+    transition: 0.3s;
   }
 
   h3 {
