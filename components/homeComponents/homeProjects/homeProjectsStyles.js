@@ -79,10 +79,12 @@ export const ProjectCard = styled.div`
     color: #fff;
     position: absolute;
     bottom: 0;
-    padding: 5px;
-    margin-bottom: 6px;
+    padding: 5px 5px 11px 5px;
+    margin-bottom: 0;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
   }
 `;
