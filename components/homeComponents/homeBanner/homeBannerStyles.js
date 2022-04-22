@@ -9,4 +9,5 @@ export const BannerWrap = styled.div`
   background: #dddddd;
   background-color: rgb(221, 221, 221);
   clear: both;
+  margin-top: 67px;
 `;
