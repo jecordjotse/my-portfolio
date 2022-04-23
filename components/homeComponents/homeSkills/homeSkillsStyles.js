@@ -5,6 +5,8 @@ export const SkillsMainWrap = styled.div`
   color: rgb(105, 105, 105);
   padding-bottom: 80px;
   padding-top: 80px;
+  position: relative;
+  z-index: 999;
 `;
 
 export const SkillsWrap = styled.div`

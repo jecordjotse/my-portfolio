@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import { useTheme } from '@mui/material/styles';
+import { Gear } from '../../svg/gears';
 const images = [
   {
     label: 'San Francisco – Oakland Bay Bridge, United States',
@@ -49,6 +50,7 @@ const HomeBanner = () => {
   // })
   return (
     <BannerWrap bannerImage={images[0].imgPath}>
+      <Gear />
         {/* <Carousel /> */}
         {/* <MobileStepper
       style={{position:"absolute", width:"100%", bottom:"0", background:"rgba(255, 255, 255, 0.5)"}}
