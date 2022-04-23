@@ -4,16 +4,17 @@ export const FooterWrap = styled.div`
   font-size: 14px;
   height: 22px;
   background: white;
-  padding-bottom: 35px;
+  padding-bottom: 0;
   padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 35px;
+  padding-right: 0;
+  padding-top: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   height: auto;
 
-  div {
-    position: absolute;
-    right: 0;
+  p {
+    flex: 1 1 auto;
+    text-align: center;
+    align-self: center;
   }
 `;

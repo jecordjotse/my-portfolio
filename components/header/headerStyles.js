@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const HeaderMainWrap = styled.div`
   position: fixed;
@@ -92,12 +92,15 @@ export const NavBar = styled.nav`
   top: 0px;
   transform: matrix(1, 0, 0, 1, 0, 0);
   transition-delay: 0s;
+  a.active {
+    color: rgb(255, 23, 127);
+  }
 `;
 
 export const NavItem = styled.a`
   background-color: rgba(0, 0, 0, 0);
   box-sizing: border-box;
-  color: rgb(255, 23, 127);
+  color: #efeaf6;
   display: block;
   font-weight: 300;
   line-height: 33px;
@@ -139,7 +142,7 @@ export const NavItem = styled.a`
   }
 `;
 
-export const SocialBar = styled.div`
+export const SocialBarWrap = styled.div`
   box-sizing: border-box;
   color: rgb(51, 51, 51);
   display: flex;
