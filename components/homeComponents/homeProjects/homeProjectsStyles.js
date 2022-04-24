@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 
 export const PrjectsWrap = styled.div`
   border-top-color: rgb(237, 237, 237);
@@ -42,7 +42,14 @@ export const ProjectLineItem = styled.div`
     flex: ${Math.round(Math.random())} 1 auto;
   }
 `;
-
+const detailExpand = keyframes`
+  from{
+    transform: translateY(20px);
+  }
+  to{
+    height: translateY(120px);
+  }
+`;
 export const ProjectCard = styled.div`
   background-color: rgba(0, 0, 0, 0);
   background-image: url("${(props) =>
@@ -71,18 +78,27 @@ export const ProjectCard = styled.div`
   }
   height: 350px;
 
-  :hover {
-    opacity: 60%;
-
-    h3 {
-      height: 100%;
-      transition: height 0.3s 0.8s;
-    }
-
-    transition: 0.3s;
+  p {
+    display: none;
   }
 
-  h3 {
+  :hover {
+    opacity: 60%;
+    transition: 0.3s;
+    div {
+      font-size: 32px;
+      background: rgba(0, 0, 0, 0.7);
+      height: 100%;
+      transform: translateY(1px);
+    }
+
+    p {
+      display: inline;
+    }
+  }
+
+  div {
+    transition: transform 1s, background 0.5s 0.5s;
     color: #fff;
     position: absolute;
     bottom: 0;
@@ -93,5 +109,10 @@ export const ProjectCard = styled.div`
     margin-top: 0px;
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
+  }
+
+  :hover {
+    animation: ${css`
+        ${detailExpand}`} 1s linear intial;
   }
 `;

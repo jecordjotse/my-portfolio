@@ -39,38 +39,89 @@ export const Gear = (props) => (
 );
 
 const gear_1_loading = keyframes`
-from {
-    transform: rotate(0deg);
+0% {
+    transform: rotate(0deg) scale(1);
     transform-origin: 510px 176px;
+    filter: drop-shadow(-4px -1px 1px rgba(0, 0, 0, 0.5));
 }
-to {
-  transform: rotate(360deg);
+25% {
+    transform: rotate(90deg) scale(1.05);
+    transform-origin: 510px 176px;
+    filter: drop-shadow(-1px 4px 1px rgba(0, 0, 0, 0.48));
+}
+50% {
+    transform: rotate(180deg) scale(1.1);
+    transform-origin: 510px 176px;
+    filter: drop-shadow(4px 1px 1px rgba(0, 0, 0, 0.46));
+}
+75% {
+    transform: rotate(270deg) scale(1.02);
+    transform-origin: 510px 176px;
+    filter: drop-shadow(1px -4px 1px rgba(0, 0, 0, 0.48));
+}
+100% {
+  transform: rotate(360deg) scale(1);
   transform-origin: 510px 176px;
+  filter: drop-shadow(-4px -1px 1px rgba(0, 0, 0, 0.5));
 }
 `;
 const gear_2_loading = keyframes`
-from {
-    transform: rotate(0deg);
-    transform-origin: 86px 49px;
-}
-to {
-  transform: rotate(360deg);
+0% {
+  transform: rotate(0deg);
   transform-origin: 86px 49px;
+  filter: drop-shadow(-4px -1px 1px rgba(0, 0, 0, 0.5));
+}
+25% {
+  transform: rotate(90deg) ;
+  transform-origin: 86px 49px;
+  filter: drop-shadow(-1px 4px 1px rgba(0, 0, 0, 0.5));
+}
+50% {
+  transform: rotate(180deg) ;
+  transform-origin: 86px 49px;
+  filter: drop-shadow(4px 1px 1px rgba(0, 0, 0, 0.5));
+}
+75% {
+  transform: rotate(270deg);
+  transform-origin: 86px 49px;
+  filter: drop-shadow(1px -4px 1px rgba(0, 0, 0, 0.5));
+}
+100% {
+transform: rotate(360deg);
+transform-origin: 86px 49px;
+filter: drop-shadow(-4px -1px 1px rgba(0, 0, 0, 0.5));
 }
 `;
 const gear_3_loading = keyframes`
-from {
-    transform: rotate(0deg);
+0% {
+    transform: rotate(360deg);
     transform-origin: 233px 170px;
+    filter: drop-shadow(-4px -1px 1px rgba(0, 0, 0, 0.5));
 }
-to {
-  transform: rotate(360deg);
+25% {
+    transform: rotate(270deg) ;
+    transform-origin: 233px 170px;
+    filter: drop-shadow(1px -4px 1px rgba(0, 0, 0, 0.5));
+}
+50% {
+    transform: rotate(180deg) ;
+    transform-origin: 233px 170px;
+    filter: drop-shadow(4px 1px 1px rgba(0, 0, 0, 0.5));
+}
+75% {
+    transform: rotate(90deg);
+    transform-origin: 233px 170px;
+    filter: drop-shadow(-1px 4px 1px rgba(0, 0, 0, 0.5));
+}
+100% {
+  transform: rotate(0deg);
   transform-origin: 233px 170px;
+  filter: drop-shadow(-4px -1px 1px rgba(0, 0, 0, 0.5));
 }
 `;
 
 const Gear1 = styled.path`
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  filter: drop-shadow(-4px -1px 1px rgba(0, 0, 0, 0.5));
   :hover {
     animation: ${css`
         ${gear_1_loading}`} 16s linear infinite;
@@ -82,14 +133,14 @@ const Gear1 = styled.path`
   }
 `;
 const Gear2 = styled.path`
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  filter: drop-shadow(-4px -1px 1px rgba(0, 0, 0, 0.4));
   :hover {
     animation: ${css`
         ${gear_2_loading}`} 4s linear infinite;
   }
 `;
 const Gear3 = styled.path`
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  filter: drop-shadow(-4px -1px 1px rgba(0, 0, 0, 0.4));
   :hover {
     animation: ${css`
         ${gear_3_loading}`} 8s linear infinite;
