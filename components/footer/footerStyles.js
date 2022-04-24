@@ -8,7 +8,6 @@ export const FooterWrap = styled.div`
   padding-left: 20px;
   padding-right: 0;
   padding-top: 0;
-  display: flex;
   justify-content: flex-end;
   height: auto;
 
@@ -16,5 +15,13 @@ export const FooterWrap = styled.div`
     flex: 1 1 auto;
     text-align: center;
     align-self: center;
+  }
+
+  @media all and (min-width: 766px) {
+    display: flex;
+  }
+
+  @media all and (max-width: 766px) {
+    display: grid;
   }
 `;

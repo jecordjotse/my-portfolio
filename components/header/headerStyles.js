@@ -39,8 +39,12 @@ export const HeaderWrap = styled.div`
 export const Brand = styled.div`
   flex: 1 1 auto;
   left: 0;
-  p{
-      font-size: 1rem:
+  p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: auto;
+    margin-top: 10px;
+    max-height: 40px;
   }
 `;
 
@@ -52,7 +56,7 @@ export const DropDownWrap = styled.div`
   overflow-x: hidden;
   overflow-y: hidden;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   right: 0px;
   width: 100vw;
   transition: height 0.5s;
@@ -78,7 +82,7 @@ export const NavBar = styled.nav`
   background-size: auto;
   box-sizing: border-box;
   color: rgb(51, 51, 51);
-  z-index: 1000;
+  z-index: 9000;
   display: relative;
   left: 0px;
   min-width: 200px;

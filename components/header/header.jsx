@@ -31,7 +31,7 @@ const Header = () => {
     <>
       <HeaderMainWrap>
         <HeaderWrap>
-          <Brand><p>Jerome Cordjotse</p></Brand>
+          <Brand><p>Jerome Elorm Cordjotse</p></Brand>
           <MenuIcon ref={myRef} menuFunc={toggleMenu} />
         </HeaderWrap>
       </HeaderMainWrap>
