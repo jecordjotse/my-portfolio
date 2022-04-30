@@ -40,9 +40,9 @@ const Header = () => {
           <Link href="/" passHref>
             <NavItem className={router.pathname == "/" ? "active" : ""}>Home</NavItem>
           </Link>
-          <Link href="/about/elorm_jerome" passHref>
+          {/* <Link href="/about/elorm_jerome" passHref>
             <NavItem className={router.pathname == "/about/elorm_jerome" ? "active" : ""}>About Me</NavItem>
-          </Link>
+          </Link> */}
           <Link href="/contact" passHref>
             <NavItem className={router.pathname == "/contact" ? "active" : ""}>Contact</NavItem>
           </Link>
