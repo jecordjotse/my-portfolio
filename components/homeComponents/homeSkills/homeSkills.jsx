@@ -7,10 +7,10 @@ const HoemSkills = () => {
   return (
   <SkillsMainWrap>
     <SkillsWrap>
-      <TitleWrap><h2>My Skills</h2></TitleWrap>
       <Skills>
-        <p>I am an electrical engineer and a software developer with over 4 years experience as a fullstack developer. I love MCU and I play the guitar. I also participate in kaggle competitions (very rarely). My dream is to build a fully automated house with an AI house keeper</p>
-        <div style={{display:"grid"}}>
+        <h3>The Tools and technology stack</h3>
+        <p>As a developer, there are languages that I got into programming with, ranging from C/C++ to Java and then to PHP/Python. These are the languages and tech stacks/frameworks I work with within my development process.</p>
+        <div style={{display:"grid", placeContent:"space-between"}}>
           <SkillItem><HTML5/></SkillItem>
           <SkillItem><CSS3/></SkillItem>
           <SkillItem><JS/></SkillItem>

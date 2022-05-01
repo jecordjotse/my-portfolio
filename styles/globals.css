@@ -1,6 +1,7 @@
 html,
 body {
   overflow-x: hidden;
+  overflow-y: auto;
   padding: 0;
   margin: 0;
   font-family: Dosis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -19,4 +20,8 @@ a {
 textarea {
   font-family: inherit;
   font-size: inherit;
+}
+
+.disable-scroll {
+  overflow: hidden;
 }

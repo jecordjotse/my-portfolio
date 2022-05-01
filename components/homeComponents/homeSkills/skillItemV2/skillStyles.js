@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SkillSVGMainWrap = styled.div`
-  background-color: rgb(237, 237, 237);
+  background-color: rgb(255, 255, 255);
   box-sizing: border-box;
   color: rgb(105, 105, 105);
   font-family: Roboto, sans-serif;
