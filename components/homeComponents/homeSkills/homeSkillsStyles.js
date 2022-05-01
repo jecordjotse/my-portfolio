@@ -37,12 +37,19 @@ export const TitleWrap = styled.div`
   width: 50%;
 
   h2 {
-    font-size: 21px;
+    @media all and (min-width: 766px) {
+      font-size: 85px;
+    }
+    @media all and (min-width: 540px) and (max-width: 766px) {
+      font-size: 65px;
+    }
+    @media all and (max-width: 540px) {
+      font-size: 45px;
+    }
   }
 `;
 
 export const Skills = styled.div`
-  box-sizing: border-box;
   color: rgb(105, 105, 105);
   float: left;
   font-family: Roboto, sans-serif;
@@ -52,7 +59,11 @@ export const Skills = styled.div`
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
-
+  @media all and (min-width: 540px) {
+    > div {
+      grid: auto/auto auto auto;
+    }
+  }
   p {
     box-sizing: border-box;
     color: rgb(105, 105, 105);
@@ -65,5 +76,8 @@ export const Skills = styled.div`
 
   @media all and (max-width: 540px) {
     max-width: 90vw;
+    > div {
+      grid: auto/auto auto;
+    }
   }
 `;
