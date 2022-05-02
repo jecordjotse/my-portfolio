@@ -1,7 +1,19 @@
-import React from "react";
+import Head from "next/head";
+import { useRouter } from "next/router";
+import React, { useEffect } from "react";
 
 const Index = () => {
-  return <div>Index</div>;
+  const router = useRouter();
+  useEffect(() => {
+    router.push("/about/elorm_jerome");
+  });
+  return (
+    <>
+      <Head>
+        <title>Who is Elorm Jerome?</title>
+      </Head>
+    </>
+  );
 };
 
 export default Index;

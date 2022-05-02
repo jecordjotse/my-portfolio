@@ -50,6 +50,7 @@ export const AboutText = styled.div`
     margin-bottom: 10px;
     margin-top: 0px;
     width: 95%;
+
   }
 `;
 

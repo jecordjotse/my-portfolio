@@ -1,16 +1,29 @@
 import React from 'react'
+import { Angular, BeanStalk, CSS3, Firebase, GCP, HTML5, JS, MongoDB, NextJS, NodeJS, PHP, ReactJS } from '../../svg'
 import { Skills, SkillsMainWrap, SkillsWrap, TitleWrap } from './homeSkillsStyles'
-import SkillItem from './skillItem'
+import SkillItem from './skillItemV2'
 
 const HoemSkills = () => {
   return (
   <SkillsMainWrap>
     <SkillsWrap>
-      <TitleWrap><h2>My Skills</h2></TitleWrap>
       <Skills>
-        <p>The happiness of your life depends upon the quality of your thoughts: therefore, guard accordingly, and take care that you entertain no notions unsuitable to virtue and reasonable nature</p>
-        <SkillItem skill="Software Development" percent="97" />
-        <SkillItem skill="Electrical Circuit Design" percent="89" />
+        <h3>The Tools and technology stack</h3>
+        <p>As a developer, there are languages that I got into programming with, ranging from C/C++ to Java and then to PHP/Python. These are the languages and tech stacks/frameworks I work with within my development process.</p>
+        <div style={{display:"grid", placeContent:"space-between"}}>
+          <SkillItem><HTML5/></SkillItem>
+          <SkillItem><CSS3/></SkillItem>
+          <SkillItem><JS/></SkillItem>
+          <SkillItem><PHP/></SkillItem>
+          <SkillItem><GCP/></SkillItem>
+          <SkillItem><BeanStalk/></SkillItem>
+          <SkillItem><Firebase/></SkillItem>
+          <SkillItem><MongoDB/></SkillItem>
+          <SkillItem><NodeJS/></SkillItem>
+          <SkillItem><ReactJS/></SkillItem>
+          <SkillItem><NextJS/></SkillItem>
+          <SkillItem><Angular/></SkillItem>
+        </div>
       </Skills>
     </SkillsWrap>
   </SkillsMainWrap>

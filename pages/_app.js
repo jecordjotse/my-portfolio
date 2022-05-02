@@ -4,11 +4,12 @@ import "../styles/globals.css";
 import "@fontsource/dosis";
 
 function MyApp({ Component, pageProps }) {
+  const year = new Date().getFullYear();
   return (
     <>
       <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <Component {...pageProps} style={{ minHeight: "900px" }} />
+      <Footer year={year} />
     </>
   );
 }
