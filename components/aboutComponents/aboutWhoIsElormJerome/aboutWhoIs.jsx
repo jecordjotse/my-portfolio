@@ -3,7 +3,6 @@ import { AboutText, AboutWhoIsComponentWrap, ImageWrap, WhoIsWrap } from "./abou
 
 const WhoIs = () => {
   return (
-    <div style={{background:"white"}}>
       <AboutWhoIsComponentWrap>
         <WhoIsWrap>
           <AboutText>
@@ -15,7 +14,6 @@ const WhoIs = () => {
           </ImageWrap>
         </WhoIsWrap>
       </AboutWhoIsComponentWrap>
-    </div>
   )
 };
 

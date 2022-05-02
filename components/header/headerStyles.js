@@ -58,6 +58,12 @@ export const Brand = styled.div`
   img {
     width: 50px;
   }
+
+  span {
+    @media all and (max-width: 350px) {
+      display: none;
+    }
+  }
 `;
 
 export const DropDownWrap = styled.div`

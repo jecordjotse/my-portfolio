@@ -73,7 +73,7 @@ const enableScroll = () => {
 									src='/EJ.png'
 									alt='edanra logo'
 								/>
-                <p>Jerome Elorm Cordjotse</p></Brand>
+                <p>Jerome <span>Elorm</span> Cordjotse</p></Brand>
           <MenuIcon ref={myRef} menuFunc={toggleMenu} />
         </HeaderWrap>
       </HeaderMainWrap>
