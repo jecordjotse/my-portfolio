@@ -39,6 +39,7 @@ export const AboutText = styled.div`
     font-weight: 300;
     line-height: 36px;
     margin: 0 0 32px 0;
+    width: 95%;
   }
 
   p {
@@ -48,6 +49,8 @@ export const AboutText = styled.div`
     line-height: 30px;
     margin-bottom: 10px;
     margin-top: 0px;
+    width: 95%;
+
   }
 `;
 
