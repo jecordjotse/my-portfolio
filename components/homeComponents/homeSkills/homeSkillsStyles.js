@@ -60,7 +60,7 @@ export const Skills = styled.div`
       grid: auto/auto auto auto;
     }
   }
-
+  
   p {
     box-sizing: border-box;
     color: rgb(105, 105, 105);
