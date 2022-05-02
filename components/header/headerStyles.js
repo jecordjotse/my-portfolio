@@ -44,14 +44,19 @@ export const HeaderWrap = styled.div`
 `;
 
 export const Brand = styled.div`
+  display: flex;
   flex: 1 1 auto;
   left: 0;
   p {
     font-size: 1.5rem;
     font-weight: bolder;
     margin-bottom: auto;
-    margin-top: 10px;
+    margin-top: auto;
     max-height: 40px;
+  }
+
+  img {
+    width: 50px;
   }
 `;
 
