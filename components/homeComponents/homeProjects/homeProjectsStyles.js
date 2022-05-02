@@ -16,6 +16,7 @@ export const TitleWrap = styled.div`
     font-size: 32px;
     font-weight: 300;
     line-height: 36px;
+    text-align: center;
     margin: 0 0 32px 0;
   }
   padding-left: 10px;
@@ -69,6 +70,8 @@ export const ProjectCard = styled.div`
   transition-duration: 0.25s;
   transition-property: opacity;
   transition-timing-function: ease;
+  margin: 20px;
+  border-radius: 5px;
 
   @media all and (min-width: 766px) {
     width: calc(100vw / ${(props) => (!!props.itemCnt ? props.itemCnt : 1)});

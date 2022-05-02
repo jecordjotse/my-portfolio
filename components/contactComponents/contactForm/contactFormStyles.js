@@ -143,5 +143,10 @@ export const FormWrap = styled.div`
     width: 30%;
     border-width: 0;
     cursor: pointer;
+    transition: 0.25s;
+    :hover{
+      transform: scale(1.05);
+      color:#1e3ce0;
+    }
   }
 `;

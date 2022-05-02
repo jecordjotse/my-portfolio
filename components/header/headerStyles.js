@@ -7,6 +7,13 @@ export const HeaderMainWrap = styled.div`
   right: 0px;
   background-color: #fff;
   z-index: 1000;
+  box-shadow: 10px 2px #efeaf6;
+  border-bottom: 1px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #efeaf6;
 `;
 
 export const HeaderWrap = styled.div`
@@ -56,7 +63,7 @@ export const DropDownWrap = styled.div`
   overflow-x: hidden;
   overflow-y: hidden;
   position: fixed;
-  z-index: 9999;
+  z-index: 10;
   right: 0px;
   width: 100vw;
   transition: height 0.5s;
@@ -68,6 +75,16 @@ export const DropDownWrap = styled.div`
   @media all and (max-width: 766px) {
     top: 50px;
   }
+`;
+
+export const Wrapper = styled.div`
+  content: " ";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
 `;
 
 export const NavBar = styled.nav`
@@ -82,7 +99,7 @@ export const NavBar = styled.nav`
   background-size: auto;
   box-sizing: border-box;
   color: rgb(51, 51, 51);
-  z-index: 9000;
+  z-index: 100;
   display: relative;
   left: 0px;
   min-width: 200px;
@@ -167,6 +184,11 @@ export const SocialBarWrap = styled.div`
     margin-right: 16px;
     max-width: 100%;
     text-align: left;
+    transition: 0.2s;
+
+    :hover {
+      transform: scale(1.1);
+    }
   }
   @media all and (min-width: 990px) {
     max-width: 940px;

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const SkillsMainWrap = styled.div`
-  background-color: rgb(237, 237, 237);
+  background-color: rgb(255, 255, 255);
   color: rgb(105, 105, 105);
   padding-bottom: 80px;
   padding-top: 80px;
   position: relative;
-  z-index: 999;
+  z-index: 9;
 `;
 
 export const SkillsWrap = styled.div`
@@ -21,12 +21,7 @@ export const SkillsWrap = styled.div`
     max-width: 730px;
   }
 
-  @media all and (min-width: 766px) {
-    display: flex;
-  }
-  @media all and (max-width: 766px) {
-    display: grid;
-  }
+  display: grid;
 `;
 
 export const TitleWrap = styled.div`
@@ -59,19 +54,31 @@ export const Skills = styled.div`
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
+  justify-items: center;
   @media all and (min-width: 540px) {
     > div {
       grid: auto/auto auto auto;
     }
   }
+  
   p {
     box-sizing: border-box;
     color: rgb(105, 105, 105);
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
+    font-family: Dosis;
+    font-size: 18px;
     line-height: 20px;
     margin-bottom: 10px;
     margin-top: 0px;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto 10px auto;
+  }
+
+  h3 {
+    font-family: Dosis;
+    font-size: 27px;
+    line-height: 20px;
+    text-align: center;
   }
 
   @media all and (max-width: 540px) {

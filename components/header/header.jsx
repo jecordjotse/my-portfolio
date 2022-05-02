@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Link from "next/link";
-import { HeaderMainWrap, HeaderWrap, Brand, DropDownWrap, NavBar, NavItem, SocialBarWrap } from "./headerStyles"
+import { HeaderMainWrap, HeaderWrap, Brand, DropDownWrap, NavBar, NavItem, SocialBarWrap, Wrapper } from "./headerStyles"
 import MenuIcon from "./menuIcon";
 import { TwitterIcon } from '../svg/twitter';
 import { FacebookIcon } from '../svg/facebook';
@@ -23,10 +23,46 @@ const Header = () => {
     if(clicked&&showMenu || (!clicked)&&(!showMenu))
       setShowMenu(!showMenu);
   }
+
+const preventDefault = (e) => {
+  e.preventDefault();
+}
+
+const preventDefaultForScrollKeys = (e) => {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+  // call this to Disable
+const disableScroll = () => {
+  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+  window.addEventListener(WheelEvent, preventDefault, wheelOpt); // modern desktop
+  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+// call this to Enable
+const enableScroll = () => {
+  window.removeEventListener('DOMMouseScroll', preventDefault, false);
+  window.removeEventListener(WheelEvent, preventDefault, wheelOpt); 
+  window.removeEventListener('touchmove', preventDefault, wheelOpt);
+  window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
   useEffect(()=>{
     console.log(router.asPath);
     setActiveNave(router.asPath);
   },[router])
+
+  useEffect(()=>{
+    if(showMenu){
+      document.getElementById("NavWrapper").style.background = "rgba(255, 255, 255, 0.5)";
+      document.getElementsByTagName("html")[0].className = "disable-scroll";
+    }else{
+      document.getElementById("NavWrapper").style.background = "";
+      document.getElementsByTagName("html")[0].className = "";
+    }
+  },[showMenu])
   return (
     <>
       <HeaderMainWrap>
@@ -36,13 +72,17 @@ const Header = () => {
         </HeaderWrap>
       </HeaderMainWrap>
       <DropDownWrap showMenu={showMenu}>
+        <Wrapper id="NavWrapper" onClick={()=>{setShowMenu(false); myRef.current.childMethod()}}></Wrapper>
         <NavBar onClick={() => {toggleMenu(true); myRef.current.childMethod()}}>
           <Link href="/" passHref>
             <NavItem className={router.pathname == "/" ? "active" : ""}>Home</NavItem>
           </Link>
-          {/* <Link href="/about/elorm_jerome" passHref>
+          <Link href="/about/elorm_jerome" passHref>
             <NavItem className={router.pathname == "/about/elorm_jerome" ? "active" : ""}>About Me</NavItem>
-          </Link> */}
+          </Link>
+          <Link href="/#projects" passHref>
+            <NavItem className={router.pathname == "/#projects" ? "active" : ""}>Projects</NavItem>
+          </Link>
           <Link href="/contact" passHref>
             <NavItem className={router.pathname == "/contact" ? "active" : ""}>Contact</NavItem>
           </Link>

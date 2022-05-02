@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html className="disable-scroll">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
@@ -81,7 +81,7 @@ export default class MyDocument extends Document {
 
           <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         </Head>
-        <body>
+        <body className="disable-scroll">
           <Main />
           <NextScript />
         </body>
