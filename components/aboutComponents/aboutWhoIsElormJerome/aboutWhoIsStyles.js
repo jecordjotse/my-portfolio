@@ -15,10 +15,10 @@ export const WhoIsWrap = styled.div`
     max-width: 730px;
   }
 
-  @media all and (max-width: 540) {
+  @media all and (max-width: 540px) {
     display: grid;
   }
-  @media all and (min-width: 540) {
+  @media all and (min-width: 540px) {
     display: flex;
   }
 `;
@@ -39,7 +39,7 @@ export const AboutText = styled.div`
     font-weight: 300;
     line-height: 36px;
     margin: 0 0 32px 0;
-    width: 95%;
+    width: 80%;
   }
 
   p {
@@ -49,7 +49,7 @@ export const AboutText = styled.div`
     line-height: 30px;
     margin-bottom: 10px;
     margin-top: 0px;
-    width: 95%;
+    width: 80%;
   }
 `;
 
