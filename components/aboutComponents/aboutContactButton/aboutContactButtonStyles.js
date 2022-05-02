@@ -11,9 +11,8 @@ export const ButtonWrap = styled.div`
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  margin-left: 448px;
-  margin-right: 448px;
-  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
   :before {

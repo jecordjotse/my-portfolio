@@ -16,12 +16,39 @@ export const AboutBannerWrap = styled.div`
   padding-right: 10px;
   padding-top: 80px;
   margin-top: 70px;
+
+  @media all and (min-width: 766px) {
+    padding-bottom: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 80px;
+  }
+
+  @media all and (max-width: 766px) {
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+  }
+  @media all and (min-width: 766px) {
+    margin-top: 60px;
+  }
+
+  @media all and (max-width: 766px) {
+    margin-top: 50px;
+  }
 `;
 
 export const TitleWrap = styled.div`
-  margin-left: 438px;
-  margin-right: 438px;
-  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  @media all and (min-width: 990px) {
+    max-width: 940px;
+  }
+
+  @media all and (min-width: 766px) and (max-width: 990px) {
+    max-width: 730px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -35,4 +62,12 @@ export const Title = styled.h1`
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 10px;
+
+  @media all and (min-width: 990px) {
+    max-width: 940px;
+  }
+
+  @media all and (min-width: 766px) and (max-width: 990px) {
+    max-width: 730px;
+  }
 `;

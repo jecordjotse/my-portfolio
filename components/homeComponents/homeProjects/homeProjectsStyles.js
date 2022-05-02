@@ -77,7 +77,7 @@ export const ProjectCard = styled.div`
     width: calc(100vw / ${(props) => (!!props.itemCnt ? props.itemCnt : 1)});
   }
   @media all and (max-width: 766px) {
-    width: 100vw;
+    width: 90vw;
   }
   height: 350px;
 
