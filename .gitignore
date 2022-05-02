@@ -31,3 +31,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+#playground
+/pages/playground.js
+/components/svg/playground.js
