@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html className="disable-scroll">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
