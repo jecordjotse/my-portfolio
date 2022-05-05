@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /plyaground/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://jeromecordjotse.com/sitemap.xml
+Sitemap: https://www.jeromecordjotse.com/sitemap.xml
