@@ -17,6 +17,7 @@ import { GithubIcon } from "../svg/github";
 import { LinkedinIcon } from "../svg/linkedin";
 import { InstagramIcon } from "../svg/instagram";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const Header = () => {
 	const router = useRouter();
@@ -81,7 +82,7 @@ const Header = () => {
 			<HeaderMainWrap>
 				<HeaderWrap>
 					<Brand>
-						<img src="/EJ.png" alt="edanra logo" />
+						<Image src="/EJ.png" alt="edanra logo" />
 						<p>
 							Jerome <span>Elorm</span> Cordjotse
 						</p>
