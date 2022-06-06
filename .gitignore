@@ -35,3 +35,4 @@ yarn-error.log*
 #playground
 /pages/playground.js
 /components/svg/playground.js
+/components/header/try.html
