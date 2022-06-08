@@ -1,4 +1,5 @@
-import axios from 'axios';
+
+import axs from 'axios';
 import React , { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -20,9 +21,10 @@ const style = {
   };
 
 const ContactForm = () => {
-	const [open, setOpen] = React.useState(false);
+
+const [open, setOpen] = React.useState(false);
 	const [ready, setReady] = useState(false);
-	const [formData, setFormData] = useState({name:"",email:"",message:"",captcha:""})
+	const [formData, setFormData] = useState({name:"",email:"",message:"",captcha:""});
 	const recaptchaRef = React.useRef();
 
 	const handleSubmit = (e) => {
@@ -45,6 +47,7 @@ const ContactForm = () => {
 		  })
 	}	
 
+
   return (
       <ContactFormMainWrap>
           <ContactFormWrap>
@@ -52,6 +55,7 @@ const ContactForm = () => {
                   <h2>Get In Touch</h2>
                   <p>Let&apos;s work together. Submit your details in this form and I will get back to you ASAP.</p>
             </ContactText>
+
             <FormWrap buttonDisabled={ formData.captcha === "" || formData.captcha === null ? true:false }>
                 <form action="/api/contact" method="POST" onSubmit={handleSubmit}>
                     <input type="text" name="name" placeholder="Name" maxLength="256" required value={formData.name} onChange={(e) => setFormData({...formData, name:e.target.value})}/>
@@ -59,6 +63,7 @@ const ContactForm = () => {
                     <textarea placeholder="Describe your project..." name="message" required value={formData.message} onChange={(e) => setFormData({...formData, message:e.target.value})} />
 					<ReCAPTCHA style={{display:`${(formData.name===""||formData.email==""||formData.message=="")?"none":"block	"}`}} ref={recaptchaRef}  sitekey={NEXT_PUBLIC_RECAPTCHA_KEY} onChange={(value) => {setFormData({...formData, captcha:value}); setReady(true)}}/>
                     <button type="submit" value="Send inquiry" disabled={ formData.captcha === "" || formData.captcha === null ? true:false }>Send Enquiry</button>
+
                 </form>
             </FormWrap>
           </ContactFormWrap>
