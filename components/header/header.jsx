@@ -82,7 +82,7 @@ const Header = () => {
 			<HeaderMainWrap>
 				<HeaderWrap>
 					<Brand>
-						<Image src="/EJ.png" alt="edanra logo" />
+						<Image src="/EJ.png" alt="edanra logo" width={50} height={50}/>
 						<p>
 							Jerome <span>Elorm</span> Cordjotse
 						</p>

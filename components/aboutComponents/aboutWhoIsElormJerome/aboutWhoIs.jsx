@@ -22,7 +22,7 @@ const WhoIs = () => {
 					</p>
 				</AboutText>
 				<ImageWrap>
-					<Image src="/Jerome.webp" alt="" height="auto" />
+					<Image src="/Jerome.webp" alt="" layout="fill"/>
 				</ImageWrap>
 			</WhoIsWrap>
 		</AboutWhoIsComponentWrap>
