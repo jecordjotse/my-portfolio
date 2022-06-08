@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
             crossOrigin="true"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Dosis:regular,bold,italic&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700&display=optional"
             rel="stylesheet"
           ></link>
           <link
