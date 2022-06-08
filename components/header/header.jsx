@@ -62,7 +62,6 @@ const Header = () => {
 		);
 	};
 	useEffect(() => {
-		console.log(router.asPath);
 		setActiveNave(router.asPath);
 	}, [router]);
 
